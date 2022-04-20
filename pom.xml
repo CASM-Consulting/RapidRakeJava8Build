@@ -2,13 +2,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.github.crew102</groupId>
+    <groupId>ac.uk.susx.tag</groupId>
     <packaging>jar</packaging>
     <artifactId>rapidrake</artifactId>
     <name>${project.groupId}:${project.artifactId}</name>
     <version>0.1.4</version>
     <description>A fast version of the Rapid Automatic Keyword Extraction (RAKE) algorithm</description>
     <url>https://github.com/crew102/rapidrake-java</url>
+
+    <parent>
+        <groupId>uk.ac.susx.tag</groupId>
+        <artifactId>tag-dist</artifactId>
+        <version>1.0.9</version>
+        <relativePath>../tag-dist/pom.xml</relativePath>
+    </parent>
 
     <distributionManagement>
         <snapshotRepository>
